@@ -2,7 +2,7 @@ title: My Jekyll Site
 description: >- # Başlığın altındaki metin
   My first Jekyll site hosted on GitHub Pages.
 baseurl: "" # Proje bir alt dizinde yer alıyorsa kullanılır (örneğin /blog).
-url: "https://github.com/SerhanTelatar.github.io" # GitHub Pages URL'iniz
+url: "https://SerhanTelatar.github.io" # GitHub Pages URL'iniz
 
 theme: jekyll-theme-primer # GitHub Pages'te kullanılabilir temalardan biri
 # Eğer özel bir tema kullanıyorsanız, theme parametresini kaldırabilirsiniz.
