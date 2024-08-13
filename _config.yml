@@ -1,0 +1,29 @@
+title: My Jekyll Site
+description: >- # Başlığın altındaki metin
+  My first Jekyll site hosted on GitHub Pages.
+baseurl: "" # Proje bir alt dizinde yer alıyorsa kullanılır (örneğin /blog).
+url: "https://github.com/SerhanTelatar.github.io" # GitHub Pages URL'iniz
+
+theme: jekyll-theme-primer # GitHub Pages'te kullanılabilir temalardan biri
+# Eğer özel bir tema kullanıyorsanız, theme parametresini kaldırabilirsiniz.
+
+author:
+  name: Serhan Telatar
+  email: telatarserhan@gmail.com
+
+# Markdown ayarları
+markdown: kramdown
+
+# Varsayılan düzen
+defaults:
+  - scope:
+      path: "" # Varsayılan olarak tüm dosyalar için geçerli
+    values:
+      layout: "default" # Tüm sayfalar için varsayılan düzen
+
+# Yükleme dizinleri
+include:
+  - _pages
+
+exclude:
+  - vendor
