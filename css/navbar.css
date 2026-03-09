@@ -1,0 +1,169 @@
+/* ============================================================
+   NAVBAR CSS
+   ============================================================ */
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 0 clamp(1rem, 5vw, 4rem);
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: var(--transition);
+}
+
+#navbar.scrolled {
+    background: rgba(7, 7, 17, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* ─── Logo ─── */
+.nav-logo {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--violet-light), var(--cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.02em;
+}
+
+/* ─── Nav Links ─── */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.nav-links a {
+    position: relative;
+    padding: 0.4rem 0.9rem;
+    border-radius: var(--radius-full);
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--text-primary);
+    background: var(--bg-card);
+}
+
+.nav-links a.active {
+    color: var(--violet-light);
+    background: rgba(124, 58, 237, 0.12);
+}
+
+/* ─── CTA button in nav ─── */
+.nav-cta {
+    padding: 0.45rem 1.25rem;
+    background: linear-gradient(135deg, var(--violet), var(--cyan));
+    color: #fff !important;
+    border-radius: var(--radius-full);
+    font-weight: 600 !important;
+}
+
+.nav-cta:hover {
+    box-shadow: 0 4px 16px var(--violet-glow);
+    background: rgba(0, 0, 0, 0) !important;
+    border: 1px solid var(--violet-light);
+    color: var(--violet-light) !important;
+}
+
+/* ─── Hamburger ─── */
+.nav-hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: var(--radius-sm);
+    transition: var(--transition);
+}
+
+.nav-hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--text-primary);
+    border-radius: 2px;
+    transition: var(--transition);
+}
+
+.nav-hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav-hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ─── Mobile menu ─── */
+.nav-mobile {
+    display: none;
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: rgba(7, 7, 17, 0.97);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    padding: 1.5rem clamp(1rem, 5vw, 4rem);
+    z-index: 999;
+    flex-direction: column;
+    gap: 0.5rem;
+    transform: translateY(-10px);
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.nav-mobile.open {
+    display: flex;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.nav-mobile a {
+    display: block;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--border);
+    transition: var(--transition);
+}
+
+.nav-mobile a:last-child {
+    border-bottom: none;
+}
+
+.nav-mobile a:hover,
+.nav-mobile a.active {
+    color: var(--violet-light);
+    background: rgba(124, 58, 237, 0.1);
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 900px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-hamburger {
+        display: flex;
+    }
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Serhan Telatar — Blog posts on AI, machine learning, and software engineering." />
+    <title>Blogs | Serhan Telatar</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/blogs.css" />
+</head>
+
+<body>
+    <main style="padding-top: 72px;">
+        <div class="section" style="padding-top: 4rem;">
+
+            <div class="section-header reveal">
+                <div class="section-tag">Writing</div>
+                <h1 class="section-title">Blog</h1>
+                <p class="section-subtitle">Thoughts, tutorials, and deep-dives on AI/ML, software engineering, and
+                    career.</p>
+                <div class="glow-line"></div>
+            </div>
+
+            <!-- Category Filters -->
+            <div class="blog-category-filters reveal">
+                <button class="filter-btn active" data-cat="all">All</button>
+                <button class="filter-btn" data-cat="deep-learning">Deep Learning</button>
+                <button class="filter-btn" data-cat="cv">Computer Vision</button>
+                <button class="filter-btn" data-cat="rl">Reinforcement Learning</button>
+                <button class="filter-btn" data-cat="career">Career</button>
+                <button class="filter-btn" data-cat="tutorials">Tutorials</button>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="blog-grid">
+
+                <!-- Featured Post -->
+                <article class="blog-card featured reveal">
+                    <div class="blog-thumb">
+                        <img src="images/blog/yolov8-guide.jpg" alt="YOLOv8 Tracking"
+                            onerror="this.src='https://placehold.co/900x520/0e0e22/7c3aed?text=YOLOv8+Guide'" />
+                        <span class="tag tag-cyan blog-category-badge">Computer Vision</span>
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-meta">
+                            <span>March 2026</span>
+                            <span class="blog-meta-dot"></span>
+                            <span>⏱ 8 min read</span>
+                            <span class="blog-meta-dot"></span>
+                            <span>Featured</span>
+                        </div>
+                        <h2 class="blog-title">Building a Real-Time Vehicle Tracking System with YOLOv8 and SORT</h2>
+                        <p class="blog-excerpt">
+                            A step-by-step guide to building an end-to-end ANPR (Automatic Number Plate Recognition)
+                            system.
+                            We'll cover multi-stage detection with YOLOv8, integrating the SORT tracking algorithm for
+                            persistent
+                            vehicle IDs, and using SciPy linear interpolation to handle occlusions with 100% data
+                            continuity.
+                        </p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <img src="assets/profile-pic.png" alt="Serhan" />
+                                <span>Serhan Telatar</span>
+                            </div>
+                            <a href="#" class="blog-read-link">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 2 -->
+                <article class="blog-card reveal delay-1">
+                    <div class="blog-thumb">
+                        <img src="images/blog/lora-vlm.jpg" alt="LoRA Fine-Tuning"
+                            onerror="this.src='https://placehold.co/600x340/0e0e22/06b6d4?text=LoRA+Fine-Tuning'" />
+                        <span class="tag tag-violet blog-category-badge">Deep Learning</span>
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-meta">
+                            <span>Feb 2026</span>
+                            <span class="blog-meta-dot"></span>
+                            <span>⏱ 10 min read</span>
+                        </div>
+                        <h3 class="blog-title">Fine-Tuning Llama 3.2 Vision with LoRA on a Budget GPU</h3>
+                        <p class="blog-excerpt">
+                            How to cut GPU memory usage by 40% when fine-tuning large vision-language models using
+                            Low-Rank Adaptation (LoRA) and 16-bit quantization. Practical tips for running Llama 3.2
+                            and Qwen 2.5-VL on mid-range hardware.
+                        </p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <img src="assets/profile-pic.png" alt="Serhan" />
+                                <span>Serhan Telatar</span>
+                            </div>
+                            <a href="#" class="blog-read-link">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 3 -->
+                <article class="blog-card reveal delay-2">
+                    <div class="blog-thumb">
+                        <img src="images/blog/dqn-guide.jpg" alt="DQN Agent"
+                            onerror="this.src='https://placehold.co/600x340/0e0e22/ec4899?text=DQN+Agent'" />
+                        <span class="tag tag-orange blog-category-badge">Reinforcement Learning</span>
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-meta">
+                            <span>Jan 2026</span>
+                            <span class="blog-meta-dot"></span>
+                            <span>⏱ 12 min read</span>
+                        </div>
+                        <h3 class="blog-title">Teaching a DQN to Play "The World's Hardest Game" via WebSockets</h3>
+                        <p class="blog-excerpt">
+                            Deep dive into building a hybrid environment for RL training: a real-time browser simulation
+                            sending state data to PyTorch via WebSockets at 60FPS, with Experience Replay and a novel
+                            Euclidean reward shaping function that cuts training time by 35%.
+                        </p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <img src="assets/profile-pic.png" alt="Serhan" />
+                                <span>Serhan Telatar</span>
+                            </div>
+                            <a href="#" class="blog-read-link">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 4 -->
+                <article class="blog-card reveal delay-3">
+                    <div class="blog-thumb">
+                        <img src="images/blog/credit-ml.jpg" alt="Credit Risk ML"
+                            onerror="this.src='https://placehold.co/600x340/0e0e22/22c55e?text=Credit+Risk+ML'" />
+                        <span class="tag tag-green blog-category-badge">Tutorials</span>
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-meta">
+                            <span>Dec 2024</span>
+                            <span class="blog-meta-dot"></span>
+                            <span>⏱ 7 min read</span>
+                        </div>
+                        <h3 class="blog-title">From Raw Data to AUC 0.88: ML Pipeline for Credit Default Prediction</h3>
+                        <p class="blog-excerpt">
+                            Walk through an end-to-end machine learning pipeline for credit risk — from data cleaning
+                            and feature engineering on 100K+ records to grid-search optimized Random Forest and
+                            Gradient Boosting models evaluated with AUC-ROC.
+                        </p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <img src="assets/profile-pic.png" alt="Serhan" />
+                                <span>Serhan Telatar</span>
+                            </div>
+                            <a href="#" class="blog-read-link">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 5 -->
+                <article class="blog-card reveal delay-1">
+                    <div class="blog-thumb">
+                        <img src="images/blog/ai-career.jpg" alt="AI Career"
+                            onerror="this.src='https://placehold.co/600x340/0e0e22/f97316?text=AI+Career'" />
+                        <span class="tag tag-yellow blog-category-badge">Career</span>
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-meta">
+                            <span>Nov 2024</span>
+                            <span class="blog-meta-dot"></span>
+                            <span>⏱ 5 min read</span>
+                        </div>
+                        <h3 class="blog-title">Landing Your First ML Engineering Role: Lessons from 3 Companies</h3>
+                        <p class="blog-excerpt">
+                            Practical takeaways from my journeys at BNP Paribas TEB, Wibto, and Inovako — what hiring
+                            managers actually look for, how to build a strong portfolio, and the skills that matter most
+                            for junior ML engineers in 2025.
+                        </p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <img src="assets/profile-pic.png" alt="Serhan" />
+                                <span>Serhan Telatar</span>
+                            </div>
+                            <a href="#" class="blog-read-link">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!--
+          ── Add new blog posts here following the same .blog-card pattern ──
+          Each post needs: image, category tag, date, read-time, title, excerpt, author
+        -->
+
+            </div>
+        </div>
+    </main>
+
+    <script src="js/nav.js"></script>
+    <script src="js/animations.js"></script>
+    <script>
+        /* Blog category filter */
+        document.addEventListener('DOMContentLoaded', () => {
+            const btns = document.querySelectorAll('.blog-category-filters .filter-btn');
+            const cards = document.querySelectorAll('.blog-card');
+            btns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    btns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    const cat = btn.dataset.cat;
+                    cards.forEach(card => {
+                        const badge = card.querySelector('.blog-category-badge');
+                        const cardCat = badge?.textContent.toLowerCase().replace(/\s+/g, '-') || '';
+                        card.style.display = (cat === 'all' || cardCat.includes(cat)) ? '' : 'none';
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

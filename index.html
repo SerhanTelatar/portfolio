@@ -1,307 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Serhan Telatar</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Serhan Telatar</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Serhan Telatar profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Serhan Telatar</h1>
-        <p class="section__text__p2">AI/ML Engineer</pe
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/serhan-telatar/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/SerhanTelatar'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>1+ years <br />Data Scientist</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Computer Science in Sabancı University</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-                Currently completing my fourth year at Sabancı University, I am focusing on AI and ML. I have earned certifications from IBM, Stanford University, and DeepLearning.AI. My projects include assigning severity scores to bug descriptions and classifying waste images using TensorFlow and Keras.
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Serhan Emre Telatar — AI/ML Engineer portfolio. MSc AI at Queen Mary University of London." />
+  <title>Serhan Telatar | AI/ML Engineer</title>
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+  <!-- Hero -->
+  <section id="hero" class="animated-bg">
+    <canvas id="particles-canvas"></canvas>
 
-                I excel in problem-solving and teamwork, with experience in white-box testing and frontend development. My career goal is to become a senior AI/ML developer and eventually start my own venture. I am also involved in financial data analysis projects, such as analyzing customer defaults at TEB, to enhance credit risk management and financial stability.
-            </p>
-          </div>
+    <!-- Decorative blobs -->
+    <div class="blob blob-violet" style="width:400px;height:400px;top:-100px;left:-100px;"></div>
+    <div class="blob blob-cyan"   style="width:300px;height:300px;bottom:0;right:-50px;"></div>
+
+    <div class="hero-content">
+      <!-- Left: Text -->
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span></span>
+          Available for Opportunities
+        </div>
+
+        <h1 class="hero-heading">
+          Hi, I'm <span class="gradient-text">Serhan</span><br>
+          Emre Telatar
+        </h1>
+
+        <div class="hero-role-line">
+          <span>I'm a </span>
+          <span class="hero-role-text" id="typewriter-text">AI/ML Engineer</span>
+          <span class="cursor"></span>
+        </div>
+
+        <p class="hero-desc">
+          MSc Artificial Intelligence student at Queen Mary University of London. 
+          I build intelligent systems — from multimodal LLMs and computer vision 
+          pipelines to deep reinforcement learning agents.
+        </p>
+
+        <div class="hero-actions">
+          <a href="projects.html" class="btn btn-primary">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V9z"/><polyline points="13 2 13 9 20 9"/></svg>
+            View Projects
+          </a>
+          <a href="assets/resume.pdf" target="_blank" class="btn btn-outline">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download CV
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <span>Find me on</span>
+          <a href="https://github.com/SerhanTelatar" target="_blank" class="hero-social-icon" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12c0-5.523-4.477-10-10-10z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/serhan-telatar/" target="_blank" class="hero-social-icon" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.881 3.87 6 2.5 6S.02 4.881.02 3.5C.02 2.12 1.13 1 2.5 1s2.48 1.12 2.48 2.5zM5 8H0v16h5V8zm7.982 0H8.014v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0V24H24V13.869c0-7.88-8.922-7.593-11.018-3.714V8z"/></svg>
+          </a>
+          <a href="mailto:telatarserhan@gmail.com" class="hero-social-icon" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Data Science & ML Engineer Intern at BNP Paribas TEB</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Jupyter Notebook</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Anaconda Navigator</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Excel</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/riffy.png"
-                alt="Riffy"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
+
+      <!-- Right: Avatar -->
+      <div class="hero-visual">
+        <div class="hero-chip">🧠 Deep Learning</div>
+        <div class="hero-chip">👁️ Computer Vision</div>
+        <div class="hero-chip">🤖 LLM Fine-Tuning</div>
+        <div class="hero-chip">🎮 RL Agent</div>
+        <div class="hero-avatar-ring">
+          <div class="avatar-ring"></div>
+          <div class="avatar-ring avatar-ring-2"></div>
+          <div class="avatar-dot"></div>
+          <img src="assets/profile-pic.png" alt="Serhan Telatar" class="hero-avatar" />
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:telatarserhan@gmail.com">telatarserhan@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/serhan-telatar/">LinkedIn</a></p>
-        </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="hero-stats">
+      <div class="stat-item reveal delay-1">
+        <div class="stat-number" data-count="3" data-suffix="+">0+</div>
+        <div class="stat-label">Years Experience</div>
       </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 Serhan Telatar. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+      <div class="stat-item reveal delay-2">
+        <div class="stat-number" data-count="10" data-suffix="+">0+</div>
+        <div class="stat-label">Projects Built</div>
+      </div>
+      <div class="stat-item reveal delay-3">
+        <div class="stat-number" data-count="5" data-suffix="+">0+</div>
+        <div class="stat-label">Certifications</div>
+      </div>
+      <div class="stat-item reveal delay-4">
+        <div class="stat-number" data-count="0.88" data-decimal="true">0.00</div>
+        <div class="stat-label">Best AUC Score</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Navigation Cards -->
+  <section id="quick-nav">
+    <div class="quick-nav-inner">
+      <div class="section-header">
+        <div class="section-tag">Explore</div>
+        <h2 class="section-title">What I've Built</h2>
+        <p class="section-subtitle">Navigate through my work, background, and expertise across AI and software engineering.</p>
+      </div>
+      <div class="quick-nav-grid">
+        <a href="about.html" class="quick-nav-card reveal delay-1">
+          <div class="quick-nav-icon">🎯</div>
+          <h3>About Me</h3>
+          <p>Skills, background & story</p>
+        </a>
+        <a href="projects.html" class="quick-nav-card reveal delay-2">
+          <div class="quick-nav-icon">⚙️</div>
+          <h3>Projects</h3>
+          <p>AI/ML & software builds</p>
+        </a>
+        <a href="research.html" class="quick-nav-card reveal delay-3">
+          <div class="quick-nav-icon">🔬</div>
+          <h3>Research</h3>
+          <p>Papers & ongoing work</p>
+        </a>
+        <a href="achievements.html" class="quick-nav-card reveal delay-4">
+          <div class="quick-nav-icon">🏆</div>
+          <h3>Achievements</h3>
+          <p>Certs & hackathons</p>
+        </a>
+        <a href="academics.html" class="quick-nav-card reveal delay-1">
+          <div class="quick-nav-icon">🎓</div>
+          <h3>Academics</h3>
+          <p>Education timeline</p>
+        </a>
+        <a href="feedbacks.html" class="quick-nav-card reveal delay-2">
+          <div class="quick-nav-icon">⭐</div>
+          <h3>Feedbacks</h3>
+          <p>Client testimonials</p>
+        </a>
+        <a href="blogs.html" class="quick-nav-card reveal delay-3">
+          <div class="quick-nav-icon">✍️</div>
+          <h3>Blogs</h3>
+          <p>Articles & insights</p>
+        </a>
+        <a href="contact.html" class="quick-nav-card reveal delay-4">
+          <div class="quick-nav-icon">💬</div>
+          <h3>Contact</h3>
+          <p>Get in touch</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/nav.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/home.js"></script>
+</body>
 </html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Serhan Telatar — Certificates and hackathon achievements." />
+    <title>Achievements | Serhan Telatar</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/achievements.css" />
+    <style>
+        #cert-modal {
+            position: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <main style="padding-top: 72px;">
+        <div class="section" style="padding-top: 4rem;">
+
+            <div class="section-header reveal">
+                <div class="section-tag">Recognition</div>
+                <h1 class="section-title">Achievements</h1>
+                <p class="section-subtitle">Certifications earned and hackathons participated in throughout my journey.
+                </p>
+                <div class="glow-line"></div>
+            </div>
+
+            <!-- Tabs -->
+            <div class="achievements-tabs reveal">
+                <button class="ach-tab active" data-tab="certs">🏅 Certificates</button>
+                <button class="ach-tab" data-tab="hackathons">⚡ Hackathons</button>
+            </div>
+
+            <!-- Certificates Panel -->
+            <div class="ach-panel active" id="panel-certs">
+                <div class="certs-grid">
+
+                    <div class="cert-card reveal delay-1" data-name="Machine Learning Specialization"
+                        data-issuer="DeepLearning.AI / Coursera"
+                        data-desc="Comprehensive coverage of supervised, unsupervised, and reinforcement learning by Andrew Ng. Topics include linear regression, neural networks, decision trees, clustering, and anomaly detection."
+                        data-img="images/certificates/ml-specialization.jpg" data-link="#">
+                        <div class="cert-img-wrap">
+                            <img src="images/certificates/ml-specialization.jpg" alt="ML Specialization"
+                                onerror="this.src='https://placehold.co/500x320/0e0e22/7c3aed?text=ML+Specialization'" />
+                            <div class="cert-view-overlay">🔍 View Certificate</div>
+                        </div>
+                        <div class="cert-body">
+                            <div class="cert-issuer">DeepLearning.AI · Coursera</div>
+                            <div class="cert-name">Machine Learning Specialization</div>
+                            <div class="cert-desc">Supervised, unsupervised &amp; RL fundamentals by Andrew Ng.</div>
+                            <div class="cert-date">📅 2023</div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card reveal delay-2" data-name="Deep Learning Specialization"
+                        data-issuer="Stanford / DeepLearning.AI / Coursera"
+                        data-desc="5-course specialization covering neural networks, CNNs, sequence models, NLP with attention, and ML strategy."
+                        data-img="images/certificates/deep-learning.jpg" data-link="#">
+                        <div class="cert-img-wrap">
+                            <img src="images/certificates/deep-learning.jpg" alt="Deep Learning Specialization"
+                                onerror="this.src='https://placehold.co/500x320/0e0e22/06b6d4?text=Deep+Learning'" />
+                            <div class="cert-view-overlay">🔍 View Certificate</div>
+                        </div>
+                        <div class="cert-body">
+                            <div class="cert-issuer">Stanford University · Coursera</div>
+                            <div class="cert-name">Deep Learning Specialization</div>
+                            <div class="cert-desc">CNNs, RNNs, transformers, optimization &amp; ML strategy.</div>
+                            <div class="cert-date">📅 2023</div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card reveal delay-3" data-name="Machine Learning on Google Cloud"
+                        data-issuer="Google Cloud / Coursera"
+                        data-desc="End-to-end ML on GCP covering BigQuery ML, Vertex AI, TensorFlow Extended, and MLOps pipelines."
+                        data-img="images/certificates/gcp-ml.jpg" data-link="#">
+                        <div class="cert-img-wrap">
+                            <img src="images/certificates/gcp-ml.jpg" alt="GCP ML"
+                                onerror="this.src='https://placehold.co/500x320/0e0e22/22c55e?text=GCP+ML'" />
+                            <div class="cert-view-overlay">🔍 View Certificate</div>
+                        </div>
+                        <div class="cert-body">
+                            <div class="cert-issuer">Google Cloud · Coursera</div>
+                            <div class="cert-name">Machine Learning on Google Cloud</div>
+                            <div class="cert-desc">BigQuery ML, Vertex AI, TFX, and MLOps.</div>
+                            <div class="cert-date">📅 2024</div>
+                        </div>
+                    </div>
+
+                    <!--
+            ── Add new certificates here following the same .cert-card structure ──
+            Update data-name, data-issuer, data-desc, data-img, data-link attributes
+          -->
+
+                </div>
+            </div>
+
+            <!-- Hackathons Panel -->
+            <div class="ach-panel" id="panel-hackathons">
+                <div class="hackathons-list">
+
+                    <div class="hackathon-card reveal delay-1">
+                        <div class="hackathon-date-col">
+                            <div class="hackathon-year">2024</div>
+                            <div class="hackathon-month">Spring</div>
+                            <span class="hackathon-rank badge-completed">Participant</span>
+                        </div>
+                        <div>
+                            <div class="hackathon-name">AI Innovation Hackathon — Sabancı University</div>
+                            <div class="hackathon-org">Sabancı University · Istanbul, Turkey</div>
+                            <p class="hackathon-desc">
+                                Competed in a 48-hour AI innovation challenge, developing a computer vision application
+                                for real-time scene understanding using YOLOv8 and a custom-trained detection model.
+                                Worked in a cross-functional team to deploy a full inference pipeline.
+                            </p>
+                            <div class="hackathon-tags">
+                                <span class="tag tag-violet">Python</span>
+                                <span class="tag tag-cyan">Computer Vision</span>
+                                <span class="tag tag-orange">YOLOv8</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hackathon-card reveal delay-2">
+                        <div class="hackathon-date-col">
+                            <div class="hackathon-year">2024</div>
+                            <div class="hackathon-month">Fall</div>
+                            <span class="hackathon-rank badge-completed">Top 10</span>
+                        </div>
+                        <div>
+                            <div class="hackathon-name">FinTech ML Challenge — BNP Paribas TEB</div>
+                            <div class="hackathon-org">BNP Paribas TEB · Istanbul, Turkey</div>
+                            <p class="hackathon-desc">
+                                Internal ML challenge focused on improving credit risk prediction models. Developed an
+                                ensemble approach combining Gradient Boosting and Random Forest with advanced feature
+                                engineering, achieving AUC 0.88 on held-out test data.
+                            </p>
+                            <div class="hackathon-tags">
+                                <span class="tag tag-violet">Python</span>
+                                <span class="tag tag-cyan">Scikit-learn</span>
+                                <span class="tag tag-green">Feature Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--
+            ── Add more hackathon entries here ──
+          -->
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Certificate Modal -->
+    <div class="cert-modal-overlay" id="cert-modal" role="dialog" aria-modal="true">
+        <div class="cert-modal" style="position:relative;">
+            <button class="cert-modal-close" id="modal-close" aria-label="Close">✕</button>
+            <img id="modal-img" src="" alt="" />
+            <div class="cert-modal-info">
+                <h3 id="modal-name"></h3>
+                <p id="modal-desc"></p>
+                <a id="modal-link" href="#" target="_blank" class="btn btn-primary">View Certificate ↗</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/nav.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/achievements.js"></script>
+</body>
+
+</html>

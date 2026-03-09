@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Serhan Telatar — Research work in AI, computer vision and ML." />
+    <title>Research | Serhan Telatar</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/research.css" />
+</head>
+
+<body>
+    <main style="padding-top: 72px;">
+        <div class="section" style="padding-top: 4rem;">
+
+            <div class="section-header reveal">
+                <div class="section-tag">Research</div>
+                <h1 class="section-title">Research Work</h1>
+                <p class="section-subtitle">Exploring the frontiers of AI — computer vision, multimodal models, and
+                    reinforcement learning.</p>
+                <div class="glow-line"></div>
+            </div>
+
+            <div class="research-grid">
+
+                <!-- Research Card 1 -->
+                <div class="research-card reveal delay-1">
+                    <img src="images/research/anpr-research.jpg" alt="ANPR Research" class="research-img"
+                        onerror="this.src='https://placehold.co/700x400/0e0e22/7c3aed?text=ANPR+Research'" />
+                    <div class="research-body">
+                        <div class="research-category">Computer Vision</div>
+                        <h2 class="research-title">Multi-Stage Vehicle Detection and Tracking using YOLOv8 and SORT
+                            Algorithm</h2>
+                        <div class="research-authors">
+                            <img src="assets/profile-pic.png" alt="Serhan" />
+                            <span>Serhan Emre Telatar</span>
+                        </div>
+                        <p class="research-desc">
+                            Formulated a multi-stage detection pipeline using YOLOv8 for vehicle identification and a
+                            custom-trained
+                            model for license plate localisation, achieving 95%+ accuracy. Integrated the SORT algorithm
+                            to assign unique vehicle IDs, reducing tracking errors by 30% across high-density video
+                            frames.
+                            Developed a post-processing module using Linear Interpolation (SciPy) to reconstruct missing
+                            coordinates, maintaining 100% data continuity in occluded scenarios.
+                        </p>
+                        <div class="research-meta">
+                            <span class="tag tag-violet">Computer Vision</span>
+                            <span class="tag tag-cyan">Object Detection</span>
+                            <span class="tag tag-orange">Real-Time Tracking</span>
+                        </div>
+                        <div class="research-footer">
+                            <!-- Set href to actual paper link if available; use class="btn disabled" if not -->
+                            <a href="#" class="btn btn-primary disabled" aria-disabled="true">
+                                📄 Read Paper (Coming Soon)
+                            </a>
+                            <a href="https://github.com/SerhanTelatar" target="_blank" class="btn btn-outline">GitHub
+                                →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Research Card 2 -->
+                <div class="research-card reveal delay-2">
+                    <img src="images/research/drl-research.jpg" alt="Deep RL Research" class="research-img"
+                        onerror="this.src='https://placehold.co/700x400/0e0e22/06b6d4?text=Deep+RL+Research'" />
+                    <div class="research-body">
+                        <div class="research-category">Reinforcement Learning</div>
+                        <h2 class="research-title">Deep Q-Network Agent for Complex Game Environments with Euclidean
+                            Reward Shaping</h2>
+                        <div class="research-authors">
+                            <img src="assets/profile-pic.png" alt="Serhan" />
+                            <span>Serhan Emre Telatar</span>
+                        </div>
+                        <p class="research-desc">
+                            Built a hybrid game environment establishing 60FPS real-time communication between a browser
+                            simulation
+                            and an RL agent via WebSockets. Created a Deep Q-Network (DQN) agent with PyTorch,
+                            implementing
+                            Experience Replay to stabilize training across a 48-dimensional continuous state space.
+                            Implemented a novel reward function using Euclidean distance calculations that enhanced
+                            exploration,
+                            decreasing average training time per agent by 35% and improving stability across diverse
+                            levels.
+                        </p>
+                        <div class="research-meta">
+                            <span class="tag tag-violet">DQN</span>
+                            <span class="tag tag-cyan">PyTorch</span>
+                            <span class="tag tag-pink">Game AI</span>
+                            <span class="tag tag-green">WebSockets</span>
+                        </div>
+                        <div class="research-footer">
+                            <a href="#" class="btn btn-primary disabled" aria-disabled="true">
+                                📄 Read Paper (Coming Soon)
+                            </a>
+                            <a href="https://github.com/SerhanTelatar" target="_blank" class="btn btn-outline">GitHub
+                                →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Research Card 3 -->
+                <div class="research-card reveal delay-1">
+                    <img src="images/research/credit-risk.jpg" alt="Credit Risk Research" class="research-img"
+                        onerror="this.src='https://placehold.co/700x400/0e0e22/ec4899?text=Credit+Risk+ML'" />
+                    <div class="research-body">
+                        <div class="research-category">Financial ML</div>
+                        <h2 class="research-title">End-to-End ML Pipeline for Credit Default Prediction on 100K+ Loan
+                            Applications</h2>
+                        <div class="research-authors">
+                            <img src="assets/profile-pic.png" alt="Serhan" />
+                            <span>Serhan Emre Telatar</span>
+                        </div>
+                        <p class="research-desc">
+                            Constructed an end-to-end ML pipeline using Python and SQL on 100K+ loan applications to
+                            predict
+                            credit defaults with an AUC of 0.88. Optimized Random Forest and Gradient Boosting models
+                            via
+                            grid search, achieving 82% accuracy and identifying 5 key risk factors. Conducted
+                            statistical
+                            analysis on 50+ features, improving early-warning detection by 25% and leading to a 15%
+                            reduction in bad-debt provision at BNP Paribas TEB.
+                        </p>
+                        <div class="research-meta">
+                            <span class="tag tag-violet">Scikit-learn</span>
+                            <span class="tag tag-cyan">SQL</span>
+                            <span class="tag tag-yellow">Risk Modeling</span>
+                            <span class="tag tag-orange">Gradient Boosting</span>
+                        </div>
+                        <div class="research-footer">
+                            <a href="#" class="btn btn-primary disabled" aria-disabled="true">
+                                📄 Read Paper (Coming Soon)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--
+          ── Add more research cards here following the same .research-card pattern ──
+          Set href to actual paper URL or use "disabled" class if unavailable
+        -->
+
+            </div>
+        </div>
+    </main>
+
+    <script src="js/nav.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+
+</html>

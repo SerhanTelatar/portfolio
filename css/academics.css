@@ -1,0 +1,213 @@
+/* ============================================================
+   ACADEMICS PAGE CSS
+   ============================================================ */
+
+/* ─── Education Timeline ────────────────────────────────── */
+.education-timeline {
+    position: relative;
+    padding-left: 3rem;
+    margin-bottom: 5rem;
+}
+
+.education-timeline::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--violet), var(--cyan), transparent);
+    border-radius: 2px;
+}
+
+.edu-item {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.edu-item::before {
+    content: '';
+    position: absolute;
+    left: -2.55rem;
+    top: 1.4rem;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--violet), var(--cyan));
+    box-shadow: 0 0 16px var(--violet-glow);
+    border: 2px solid var(--bg-primary);
+}
+
+.edu-item.current::before {
+    animation: pulseGlow 2s ease infinite;
+}
+
+.edu-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.75rem 2rem;
+    transition: var(--transition);
+}
+
+.edu-card:hover {
+    border-color: var(--border-glow);
+    box-shadow: var(--shadow-violet);
+    transform: translateX(4px);
+}
+
+.edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.75rem;
+}
+
+.edu-degree {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.edu-period {
+    font-size: 0.8rem;
+    color: var(--cyan);
+    font-weight: 600;
+    white-space: nowrap;
+    padding: 0.2rem 0.8rem;
+    background: rgba(6, 182, 212, 0.1);
+    border: 1px solid rgba(6, 182, 212, 0.2);
+    border-radius: var(--radius-full);
+}
+
+.edu-institution {
+    font-size: 0.95rem;
+    color: var(--violet-light);
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+}
+
+.edu-location {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+}
+
+.edu-desc {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+}
+
+.edu-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.edu-gpa {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #22c55e;
+    background: rgba(34, 197, 94, 0.1);
+    border: 1px solid rgba(34, 197, 94, 0.2);
+    border-radius: var(--radius-full);
+    padding: 0.2rem 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+/* ─── Accreditations Grid ──────────────────────────────── */
+.accreditations-section {
+    margin-top: 0;
+}
+
+.accred-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.accred-card {
+    padding: 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    transition: var(--transition);
+}
+
+.accred-card:hover {
+    border-color: var(--border-glow);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-violet);
+}
+
+.accred-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.accred-platform {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--cyan);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.accred-name {
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.accred-desc {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    flex: 1;
+}
+
+.accred-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.accred-date {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+/* ─── Responsive ─────────────────────────────────────────── */
+@media (max-width: 900px) {
+    .accred-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 540px) {
+    .accred-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .education-timeline {
+        padding-left: 2rem;
+    }
+}
